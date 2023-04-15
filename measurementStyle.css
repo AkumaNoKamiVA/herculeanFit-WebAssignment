@@ -1,0 +1,71 @@
+ body{
+		 background: #9053c7;
+		 background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+		 background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+		 background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+		 background: linear-gradient(-135deg, #c850c0, #4158d0);
+		 
+	 }
+	 .container{
+		 padding: 80px;
+		 max-width: 700px;
+		 margin: 0 auto;
+		 border-top: 5px solid #435757;
+		 background-color: rgba(255, 255, 255, .2);
+		 box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+		 background: white;
+		 border-radius:10px;
+	 }
+
+	 .insideContainer{
+		 width: 300px;
+		 float:left;
+		 padding:1px;
+		 background: white;
+	 }
+	 #imgMeasuringLeft{
+    width: 300px;
+    float:left; /* add this */
+}
+
+	/*
+	For home_btn
+	*/
+.home_btn {
+        display: inline-block;
+        background-color: #7b38d8;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 5px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+	.home_btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+	.home_btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+	.home_btn:hover {
+        background-color: #f7c2f9;
+      }
+	.home_btn:hover span {
+        padding-right: 25px;
+      }
+	.home_btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp</title>
+    <link rel="icon" type="image/png" href="images/icons/dumbbells.png"/>
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="limiter">
+        <input class="home_btn" type = "button" onclick = "window.location.href="#";"class="btn btn-warning btn-lg" value="Home"/>
+
+        <div class="container" >
+
+
+            <div class="wrap">
+           
+                <form action="SignUp.php" method= POST> <!--<?php echo $_SERVER['PHP_SELF']; ?>-->
+                <h1>Sign Up</h1>
+                    <div class="wrap-input100" style="padding-top: 20px;">
+                        <input  class="input100" type="text" autocapitalize="word" id="First_Name" name="First_Name" placeholder="First Name" required>
+                         <input  class="input100" type="text" id="Last_Name" name="Last_Name" placeholder="Last Name" required>
+                    </div>
+                    <div class="wrap-input100" >
+                        <input  class="input100" type="email" id="Email" name="Email" placeholder="Email" required>
+                        <input  class="input100" type="text" id="Phone_No" name="Phone_No" placeholder="Phone number" required>
+
+                    </div>
+                   
+                    <div class="wrap-input101">
+                        <label>Gender: </label>
+
+                        <input  type="radio" id="Male" name="Gender" placeholder="Male" checked>
+                        <label class="input101" for="Male">Male</label>
+                        
+                        <input  type="radio" id="Female" name="Gender" placeholder="Female"checked>
+                        <label class="input101" for="Female">Female</label>
+                        
+                        <input type="radio" id="Other" name="Gender"  placeholder="Other"checked>
+                        <label class="input101" for="Other">Other</label>
+                    </div>
+
+                    <div class="wrap-input100" >
+                        <label for="Dob" style="padding-top: 20px">Date of Birth: </label>
+                        <input class="input100" type="date" id="Dob" name="Calendar" value="1993-12-01" min="1933-12-01" max="2013-12-01" required>
+                    </div>
+                    <div class="wrap-input100" style="padding-top: 20px;">
+                        <input class="input100" type="text" id="Address" name="Address" placeholder="Address">
+                    </div>
+                    <div class="wrap-input100">
+                        <input class="input100" type="password" id="Password" name="Password" minlength="8"  placeholder="Password"required>
+                        <input class="input100" type="password" id="Confirm_password" name="Confirm_password" minlength="8" placeholder="Confirm Password" required>
+                    </div>  
+
+                    <div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Sign Up
+						</button>
+					</div>
+                    
+                    <div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							Already have an account?
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+<body>
+</html>
